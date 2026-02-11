@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STRIDE - Catálogo de Tenis</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">STRIDE</div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#catalogo">Catálogo</a></li>
+                    <li><a href="#novedades">Novedades</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>
+                Encuentra tu
+                <span>ESTILO</span>
+            </h1>
+            <p>Descubre la colección más exclusiva de tenis deportivos y urbanos. Diseño, comodidad y rendimiento en cada paso.</p>
+            <a href="#catalogo" class="cta-button">Ver Colección</a>
+        </div>
+    </section>
+
+    <div class="filters" id="catalogo">
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="running">Running</button>
+            <button class="filter-btn" data-filter="basketball">Basketball</button>
+            <button class="filter-btn" data-filter="casual">Casual</button>
+            <button class="filter-btn" data-filter="training">Training</button>
+        </div>
+    </div>
+
+    <section class="catalog">
+        <h2 class="catalog-title">Nuestra Colección</h2>
+        
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card" data-category="running">
+                <div class="product-tag">NUEVO</div>
+                <div class="product-image">
+                    <div class="img-placeholder">👟</div>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Running</div>
+                    <h3 class="product-name">Velocity Pro</h3>
+                    <p class="product-description">Máxima velocidad y amortiguación. Diseñado para corredores de alto rendimiento.</p>
+                    <div class="product-footer">
+                        <div class="product-price"><span>$</span>1,299</div>
+                        <button class="buy-btn">Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card" data-category="basketball">
+                <div class="product-tag">HOT</div>
+                <div class="product-image">
+                    <div class="img-placeholder">🏀</div>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Basketball</div>
+                    <h3 class="product-name">Air Bounce Elite</h3>
+                    <p class="product-description">Soporte de tobillo superior y respuesta explosiva en la cancha.</p>
+                    <div class="product-footer">
+                        <div class="product-price"><span>$</span>1,599</div>
+                        <button class="buy-btn">Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card" data-category="casual">
+                <div class="product-image">
+                    <div class="img-placeholder">👟</div>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Casual</div>
+                    <h3 class="product-name">Urban Flex</h3>
+                    <p class="product-description">Estilo urbano con comodidad todo el día. Perfecto para cualquier ocasión.</p>
+                    <div class="product-footer">
+                        <div class="product-price"><span>$</span>899</div>
+                        <button class="buy-btn">Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card" data-category="training">
+                <div class="product-tag">NUEVO</div>
+                <div class="product-image">
+                    <div class="img-placeholder">💪</div>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Training</div>
+                    <h3 class="product-name">Force Trainer X</h3>
+                    <p class="product-description">Estabilidad extrema para levantamientos y entrenamientos de alta intensidad.</p>
+                    <div class="product-footer">
+                        <div class="product-price"><span>$</span>1,199</div>
+                        <button class="buy-btn">Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-card" data-category="running">
+                <div class="product-image">
+                    <div class="img-placeholder">🏃</div>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Running</div>
+                    <h3 class="product-name">Cloud Sprint</h3>
+                    <p class="product-description">Sensación de nube con cada zancada. Tecnología de espuma reactiva.</p>
+                    <div class="product-footer">
+                        <div class="product-price"><span>$</span>1,399</div>
+                        <button class="buy-btn">Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="product-card" data-category="casual">
+                <div class="product-tag">SALE</div>
+                <div class="product-image">
+                    <div class="img-placeholder">✨</div>
+                </div>
+                <div class="product-info">
+                    <div class="product-category">Casual</div>
+                    <h3 class="product-name">Retro Wave</h3>
+                    <p class="product-description">Inspiración vintage con tecnología moderna. Un clásico reinventado.</p>
+                    <div class="product-footer">
+                        <div class="product-price"><span>$</span>799</div>
+                        <button class="buy-btn">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 STRIDE. Todos los derechos reservados. | Diseñado con pasión por el deporte</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
